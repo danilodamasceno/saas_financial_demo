@@ -1,0 +1,6 @@
+SELECT COUNT(*) AS rows_loaded FROM CHARGES;
+
+-- to check if the id is unique 
+SELECT COUNT(DISTINCT CHARGE_ID) FROM CHARGES;
+
+SELECT * FROM CHARGES LIMIT 10;

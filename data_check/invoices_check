@@ -1,0 +1,6 @@
+SELECT COUNT(*) AS rows_loaded FROM INVOICES;
+
+-- to check if the id is unique 
+SELECT COUNT(DISTINCT INVOICE_ID) from INVOICES;
+
+SELECT * FROM INVOICES LIMIT 10;

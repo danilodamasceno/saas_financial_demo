@@ -1,0 +1,6 @@
+SELECT COUNT(*) AS rows_loaded FROM PLAN_PRICES;
+
+-- to check if the id is unique 
+SELECT COUNT(DISTINCT PLAN_ID) from PLAN_PRICES;
+
+SELECT * FROM PLAN_PRICES LIMIT 10;
