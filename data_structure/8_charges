@@ -1,0 +1,20 @@
+-- creating table CHARGES
+CREATE OR REPLACE TABLE CHARGES (
+  CHARGE_ID        STRING,
+  INVOICE_ID       STRING,          
+  CUSTOMER_ID      STRING,          
+  SUBSCRIPTION_ID  STRING,          
+  AMOUNT           NUMBER(18,0),    
+  CURRENCY         CHAR(3),
+  STATUS           STRING,          
+  PAID             BOOLEAN,
+  FAILURE_CODE     STRING,
+  FAILURE_MESSAGE  STRING,
+  ATTEMPT          NUMBER(5,0),
+  CREATED          TIMESTAMP_NTZ
+);
+
+--LOAD .CSV TO THE TABLE
+COPY INTO CHARGES
+FROM @STG_RAW_FINANCE/charges.csv
+ON_ERROR = 'ABORT_STATEMENT';
