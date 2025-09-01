@@ -1,0 +1,4 @@
+plan_id,product_name,unit_amount,currency,interval,sort_order
+price_basic_m,Basic Plan,2900,usd,month,0
+price_growth_m,Growth Plan,9900,usd,month,1
+price_pro_m,Pro Plan,19900,usd,month,2
