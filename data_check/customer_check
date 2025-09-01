@@ -1,0 +1,6 @@
+SELECT COUNT(*) AS rows_loaded FROM CUSTOMERS;
+
+-- to check if the id is unique 
+SELECT COUNT(DISTINCT customer_id) from CUSTOMERS;
+
+SELECT * FROM CUSTOMERS LIMIT 10;
